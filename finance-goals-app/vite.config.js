@@ -9,19 +9,18 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
 
+      includeAssets: ['icon-192.png', 'icon-512.png'],
+
       manifest: {
         name: 'Financial Goal Tracker',
-
-        short_name: 'GoalTracker',
-
-        description:
-          'Personal financial goals tracker app',
+        short_name: 'Goals',
+        description: 'Personal financial goals tracker app',
 
         theme_color: '#0f172a',
-
         background_color: '#0f172a',
 
         display: 'standalone',
+        start_url: '/',
 
         icons: [
           {
@@ -29,7 +28,6 @@ export default defineConfig({
             sizes: '192x192',
             type: 'image/png'
           },
-
           {
             src: '/icon-512.png',
             sizes: '512x512',
