@@ -27,7 +27,7 @@ function GoalForm({ addGoal }) {
     }
 
     return (
-        <div>
+        <div className="goal-form">
             <h2>Create Goal</h2>
 
             <form onSubmit={handleSubmit}>
